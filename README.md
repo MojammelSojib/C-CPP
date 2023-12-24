@@ -50,25 +50,20 @@ int main()
 //Leap Year program
 #include<iostream>
 using namespace std;
-int main()
-{
+
+int main() {
    int year;
-   cout<<"Enter any year : ";
-   cin>>year;
+   cout << "Enter any year: ";
+   cin >> year;
 
-   if(year%4==0 && year%100==0)
-   {
-       cout<<"Leap YEar";
+   if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
+       cout << "Leap Year";
    }
-   else if(year%400==0)
-   {
-       cout<<"Leap Year";
+   else {
+       cout << "Not Leap Year";
    }
-   else
-   {
-       cout<<"Not Leap Year";
-   }
-    return 0;
 
+   return 0;
 }
+
 
