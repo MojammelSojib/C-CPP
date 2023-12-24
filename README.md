@@ -94,4 +94,19 @@ int main() {
    return 0;
 }
 
+//while loop
+#include<iostream>
+using namespace std;
 
+int main(){
+    int i=1;//initalization
+    while(i<=100)//condition check
+    {
+        cout<<i<<endl;
+        i++;//increment
+    }
+    cout<<"End of while loop";
+   return 0;
+}
+
+//do while
