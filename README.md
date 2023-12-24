@@ -110,3 +110,40 @@ int main(){
 }
 
 //do while
+#include<iostream>
+using namespace std;
+
+int main(){
+    int i=0;//initalization
+    do{
+        cout<<i<<endl;
+        i++;//increment
+    }
+    while(i<=100);
+
+    cout<<"End of while loop";
+   return 0;
+}
+
+//Multiplication table
+#include<iostream>
+using namespace std;
+
+int main(){
+
+    int num;
+        cout<<"Enter any integer number : ";
+        cin>>num;
+
+        for(int i=1;i<=10;i++)
+        {
+            cout<<num<< " X "<< " = "<<(num*i)<<endl;
+        }
+
+    cout<<" The  End ";
+   return 0;
+}
+
+
+
+
