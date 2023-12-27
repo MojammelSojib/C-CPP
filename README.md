@@ -144,6 +144,23 @@ int main(){
    return 0;
 }
 
+#include<iostream>
+using namespace std;
+int main()
+{
+    int sum=0,n;
+    cout<<"Enter the last number : ";
+    cin>>n;
+    cout << "The sum of the sequence 1+2+3+..+" << n << " is: "<<endl;
+
+     for(int i=1;i<=n;i=i+1)
+    {
+        sum=sum+i;
+    }
+    cout<<sum;
+    return 0;
+}
+
 
 
 
