@@ -232,5 +232,241 @@ int main()
 
     getch();
 }
+//matrix
+#include<iostream>
+#include<conio.h>
+using namespace std;
 
+int main() {
+    int a[2][2];
+
+    cout<<"Enter the elements : "<<endl;
+    // Input values into the array
+    for(int r=0; r<2; r++)
+    {
+        for(int c=0; c<2; c++)
+        {
+            cout << "A[" <<r<<"] [" <<c<< "] = ";
+            cin >> a[r][c];
+        }
+    }
+
+    // Output the array
+    cout<<"A Matrix = "<<endl;
+    for(int r=0; r<2; r++)
+    {
+        for(int c=0; c<2; c++)
+        {
+            cout << a[r][c] << " ";
+        }
+        cout << endl;
+    }
+
+    getch();
+    return 0;
+}
+
+//simple array
+#include<iostream>
+#include<conio.h>
+using namespace std;
+
+int main() {
+    int i, j;
+    int A[3][3],B[3][3];
+
+    cout<<"Enter elements for A Matrix : "<<endl;
+    // Input values into the array
+    for(i = 0; i < 3; i++)
+    {
+        for(j = 0; j < 3; j++)
+        {
+            cout<< "A ["<< i<<" ][" << j << "] = ";
+            cin>> A[i][j]; // Add & before A[i][j]
+        }
+        cout<<endl;
+    }
+
+        for(i = 0; i < 3; i++)
+    {
+        for(j = 0; j < 3; j++)
+        {
+            cout<< "B ["<< i<<" ][" << j << "] = ";
+            cin>> B[i][j]; // Add & before A[i][j]
+        }
+        cout<<endl;
+    }
+
+    // Output the array
+    cout << "A = ";
+    for(i = 0; i < 3; i++)
+    {
+        cout << "\t";
+        for(j = 0; j < 3; j++) {
+            cout << A[i][j] << " "; // Print a space after each element
+        }
+        cout << endl; // Add a newline after each row
+    }
+
+   cout << "B = ";
+    for(i = 0; i < 3; i++)
+    {
+        cout << "\t";
+        for(j = 0; j < 3; j++) {
+            cout << B[i][j] << " "; // Print a space after each element
+        }
+        cout << endl; // Add a newline after each row
+    }
+
+    getch();
+    return 0;
+}
+
+//Sum of matrix
+#include<iostream>
+#include<conio.h>
+using namespace std;
+
+int main() {
+    int i, j;
+    int A[3][3],B[3][3],c[3][3];
+
+    cout<<"Enter elements for A Matrix : "<<endl;
+    // Input values into the array
+    for(i = 0; i < 3; i++)
+    {
+        for(j = 0; j < 3; j++)
+        {
+            cout<< "A ["<< i<<" ][" << j << "] = ";
+            cin>> A[i][j]; // Add & before A[i][j]
+        }
+        cout<<endl;
+    }
+
+        for(i = 0; i < 3; i++)
+    {
+        for(j = 0; j < 3; j++)
+        {
+            cout<< "B ["<< i<<" ][" << j << "] = ";
+            cin>> B[i][j]; // Add & before A[i][j]
+        }
+        cout<<endl;
+    }
+//calculate sum
+    for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+            c[i][j]=A[i][j]+B[i][j];
+        }
+    }
+    // Output the array
+    cout << "A = ";
+    for(i = 0; i < 3; i++)
+    {
+        cout << "\t";
+        for(j = 0; j < 3; j++) {
+            cout << A[i][j] << " "; // Print a space after each element
+        }
+        cout << endl; // Add a newline after each row
+    }
+
+   cout << "B = ";
+    for(i = 0; i < 3; i++)
+    {
+        cout << "\t";
+        for(j = 0; j < 3; j++) {
+            cout << B[i][j] << " "; // Print a space after each element
+        }
+        cout << endl; // Add a newline after each row
+    }
+
+    cout<<"Sum=";
+     for(i = 0; i < 3; i++)
+    {
+        cout << "\t";
+        for(j = 0; j < 3; j++) {
+            cout << c[i][j] << " ";
+        }
+        cout << endl;
+    }
+
+
+    getch();
+    return 0;
+}
+//subtraticon
+
+#include<iostream>
+#include<conio.h>
+using namespace std;
+
+int main() {
+    int i, j;
+    int A[3][3],B[3][3],c[3][3];
+
+    cout<<"Enter elements for A Matrix : "<<endl;
+    // Input values into the array
+    for(i = 0; i < 3; i++)
+    {
+        for(j = 0; j < 3; j++)
+        {
+            cout<< "A ["<< i<<" ][" << j << "] = ";
+            cin>> A[i][j]; // Add & before A[i][j]
+        }
+        cout<<endl;
+    }
+
+        for(i = 0; i < 3; i++)
+    {
+        for(j = 0; j < 3; j++)
+        {
+            cout<< "B ["<< i<<" ][" << j << "] = ";
+            cin>> B[i][j]; // Add & before A[i][j]
+        }
+        cout<<endl;
+    }
+//calculate sum
+    for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+            c[i][j]=A[i][j]+B[i][j];
+        }
+    }
+    // Output the array
+    cout << "A = ";
+    for(i = 0; i < 3; i++)
+    {
+        cout << "\t";
+        for(j = 0; j < 3; j++) {
+            cout << A[i][j] << " "; // Print a space after each element
+        }
+        cout << endl; // Add a newline after each row
+    }
+
+   cout << "B = ";
+    for(i = 0; i < 3; i++)
+    {
+        cout << "\t";
+        for(j = 0; j < 3; j++) {
+            cout << B[i][j] << " "; // Print a space after each element
+        }
+        cout << endl; // Add a newline after each row
+    }
+
+    cout<<"Minus=";
+     for(i = 0; i < 3; i++)
+    {
+        cout << "\t";
+        for(j = 0; j < 3; j++) {
+            cout << c[i][j] << " ";
+        }
+        cout << endl;
+    }
+
+
+    getch();
+    return 0;
+}
 
