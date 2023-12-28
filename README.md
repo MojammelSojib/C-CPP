@@ -549,6 +549,25 @@ int main()
     getch();
 }
 
+//pointer
+#include<iostream>
+#include<conio.h>
+using namespace std;
+int main()
+{
+    int x=5;
+    int *p;
+    p=&x;//x er address rakci p pointer a
+
+    cout<< x <<endl;
+    cout<< &x <<endl;//adress
+    cout<< p <<endl;
+    cout<< *p <<endl;//p er value
+    
+    getch();
+
+}
+
 
 
 
