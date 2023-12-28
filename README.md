@@ -567,7 +567,25 @@ int main()
     getch();
 
 }
+ Adding 2 Numbers Using Pointer
+#include<iostream>
+#include<conio.h>
+using namespace std;
+int main()
+{
+    int x1=5;
+    int x2=15;
+    int *p1,*p2;
 
+    p1=&x1;
+    p2=&x2;
+
+    int sum=*p1+*p2;
+    cout<<sum;
+
+    getch();
+
+}
 
 
 
