@@ -469,4 +469,88 @@ int main() {
     getch();
     return 0;
 }
+//mutiplication
+#include<iostream>
+#include<conio.h>
+using namespace std;
+int main()
+{
+    int a[10][10],b[10][10],r[10][10],sum=0,r1,r2,c1,c2,i,j,k;
+
+    cout<<"Enter  row and col for first matrix: ";
+    cin>>r1>>c1;
+
+    cout<<"Enter  row and col for 2nd matrix: ";
+    cin>>r2>>c2;
+
+    while(c1!=r2)
+    {
+        cout<<"Error !! colum of first matrix not equal to row of second matrix"<<endl;
+
+        cout<<"Enter row and col for first matrix: ";
+        cin>>r1>>c1;
+        cout<<"Enter  row and col for 2nd matrix: ";
+        cin>>r2>>c2;
+    }
+    cout<<"Enter elements for first matrix\n";
+     for (i = 0; i < r1; i++)
+    {
+        for (j = 0; j < c1; j++)
+            {
+            cout << "a [" << i << "] [" << j << "] = ";
+            cin >> a[i][j];
+            }
+    }
+
+    cout << "\nEnter elements for second matrix\n";
+    for (i = 0; i < r2; i++)
+    {
+
+        for (j = 0; j < c2; j++)
+            {
+            cout << "b[" << i << "] [" << j << "] = ";
+            cin >> b[i][j];
+            }
+    }
+        // Multiplication
+    for (i = 0; i < r1; i++)
+        {
+        for (j = 0; j < c2; j++)
+        {
+            for (k = 0; k < c1; k++)
+            {
+                sum = sum + a[i][k] * b[k][j];
+            }
+            r[i][j] = sum;
+            sum = 0;
+        }
+    }
+    cout << "\n\nFirst Matrix \n";
+    for (i = 0; i < r1; i++) {
+        for (j = 0; j < c1; j++)
+            cout << a[i][j] << " ";
+        cout << endl;
+    }
+
+    cout << "\n\nSecond Matrix \n";
+    for (i = 0; i < r2; i++) {
+        for (j = 0; j < c2; j++)
+            cout << b[i][j] << " ";
+        cout << endl;
+    }
+
+    cout << "\n\nResult Matrix \n";
+    for (i = 0; i < r1; i++) {
+        for (j = 0; j < c2; j++)
+            cout << r[i][j] << " ";
+        cout << endl;
+    }
+
+    getch();
+}
+
+
+
+
+
 
