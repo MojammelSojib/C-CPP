@@ -601,6 +601,23 @@ int main()
     getch();
 }
 
+#include<iostream>
+#include<conio.h>
+using namespace std;
+
+void subtraction(int ,int);
+int main()
+{
+    subtrsction(20,10);
+    getch();
+
+}
+void subtraction(int a,int b)
+{
+    int sub = a-b;
+    cout<<sub<<endl;
+}
+
 
 
 
