@@ -652,6 +652,36 @@ int main()
 
     getch();
 }
+//guession game
+#include<iostream>
+#include<stdlib.h>
+#include<conio.h>
+using namespace std;
+int main()
+{
+    while(1)
+    {
+        int guessNumber,randomNumber;
+        cout<<"Enter Your Guess Number 1 to 5 : ";
+        cin>>guessNumber;
+
+        randomNumber =1+rand()%5;
+        if(guessNumber==randomNumber)
+        {
+            cout<<"You have WIN"<<endl;
+
+        }
+        else
+        {
+            cout<<"You have LOST .Try Again "<<endl;
+            cout<<"Random Number was : "<<randomNumber<<endl<<endl;
+        }
+
+
+    }
+
+    getch();
+}
 
 
 
