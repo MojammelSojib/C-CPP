@@ -756,6 +756,35 @@ int main()
     cout<<factorial;
     getch();
 }
+//another one
+#include<iostream>
+#include<conio.h>
+using namespace std;
+
+int fact(int n)
+{
+    if(n==1)
+        return 1;
+    else
+        return n*fact(n-1);
+}
+int main()
+{
+    int n;
+
+    // Get user input for the value of n
+    cout << "Enter a number: ";
+    cin >> n;
+
+    int factorial = fact(n);
+
+    // Display the factorial
+    cout << "Factorial of " << n << " is: " << factorial;
+
+    getch();
+    return 0;
+}
+
 
 
 
