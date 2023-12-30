@@ -706,6 +706,41 @@ sum(10,30,2);
 getch();
 }
 // passing arrays to function
+#include<iostream>
+#include<conio.h>
+using namespace std;
+
+void displayarray(int num[],int size)
+{
+    for(int i=0;i<=4;i++)
+        cout<<num[i]<<" ";
+}
+int main()
+{
+    int number[5]={10,20,30,40,50};
+    displayarray(number,5);
+
+    getch();
+}
+#include<iostream>
+#include<conio.h>
+using namespace std;
+
+void displayarray(int num[],int arraysize)
+{
+    for(int i=0;i<arraysize;i++)
+        cout<<num[i]<<" ";
+}
+int main()
+{
+    int number[5]={10,20,30,40,50};
+    displayarray(number,5);
+
+    getch();
+}
+
+
+
 
 
 
