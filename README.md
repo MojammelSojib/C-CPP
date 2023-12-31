@@ -800,6 +800,29 @@ int main()
 
     getch();
 }
+//global and local declar
+#include<iostream>
+#include<conio.h>
+using namespace std;
+
+int x=10;//golbal declar
+
+void display()
+{
+    cout<<"Inside the main Function x = "<< x <<endl;
+}
+
+int main()
+{
+
+   // int x=10; ekne dile locakl just ei function use hbe
+    cout<<"Inside the main Function x = "<< x <<endl;
+
+    display();
+    getch();
+}
+
+
 
 
 
