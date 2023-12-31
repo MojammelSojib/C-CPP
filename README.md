@@ -823,6 +823,25 @@ int main()
 }
 
 
+//scope resolution operator
+
+
+#include<iostream>
+#include<conio.h>
+using namespace std;
+
+int x=450;//golbal declar
+
+int main()
+{
+
+    int x=10;
+    cout<< :: x <<endl;
+    getch();
+}
+
+
+
 
 
 
