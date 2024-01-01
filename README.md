@@ -840,6 +840,33 @@ int main()
     getch();
 }
 
+//opp
+#include<iostream>
+#include<conio.h>
+using namespace std;
+
+class student
+{
+    public :
+        int id;
+        double gpa;
+};
+
+int main()
+{
+    student alim;
+    alim.id=101;
+    alim.gpa=3.84;
+    cout<<alim.id<< "  "<<alim.gpa<<endl;
+
+    student suma;
+    suma.id=102;
+    suma.gpa=3.92;
+    cout<<suma.id<<" "<<suma.gpa<<endl;
+
+    getch();
+}
+
 
 
 
