@@ -867,6 +867,37 @@ int main()
     getch();
 }
 
+#include<iostream>
+#include<conio.h>
+using namespace std;
+
+class student
+{
+    public :
+        int id;
+        double gpa;
+
+        void display()
+        {
+            cout<<id<<"  "<<gpa<<endl;
+        }
+};
+
+int main()
+{
+    student alim;
+    alim.id=101;
+    alim.gpa=3.84;
+   alim.display();
+
+    student suma;
+    suma.id=102;
+    suma.gpa=3.92;
+    suma.display();
+
+
+    getch();
+}
 
 
 
