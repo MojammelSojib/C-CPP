@@ -1094,6 +1094,40 @@ void myfirstclass :: display()
 {
     cout<<"Display is called"<<endl;
 }
+//Selection Operator
+#include <iostream>
+#include "myfirstclass.h"
+
+using namespace std;
+
+int main()
+{
+    myfirstclass ob;
+    myfirstclass *p=&ob;
+    p->display();
+
+    return 0;
+}
+#ifndef MYFIRSTCLASS_H
+#define MYFIRSTCLASS_H
+#include "myfirstclass.h"
+
+class myfirstclass
+{
+    public:
+
+       void display();
+};
+
+#endif // MYFIRSTCLASS_H
+#include "myfirstclass.h"
+#include<iostream>
+using namespace std;
+
+void myfirstclass :: display()
+{
+    cout<<"Display is called"<<endl;
+}
 
 
 
