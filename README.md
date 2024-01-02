@@ -1050,7 +1050,50 @@ void myfirstclass::display()
 {
     cout<<"Inside the Function"<<endl ;
 }
+//main.cpp
+#include <iostream>
+#include "myfirstclass.h"
 
+using namespace std;
+
+int main()
+{
+    myfirstclass ob;
+    ob.display();
+
+    return 0;
+}
+//class.h
+#ifndef MYFIRSTCLASS_H
+#define MYFIRSTCLASS_H
+#include "myfirstclass.h"
+
+class myfirstclass
+{
+    public:
+       myfirstclass();
+       ~myfirstclass();
+       void display();
+};
+
+#endif // MYFIRSTCLASS_H
+//class.cpp
+#include "myfirstclass.h"
+#include<iostream>
+using namespace std;
+
+myfirstclass :: myfirstclass()
+{
+    cout<<"Construtor is called"<<endl;
+}
+myfirstclass :: ~myfirstclass()
+{
+    cout<<"DEstutror is called"<<endl;
+}
+void myfirstclass :: display()
+{
+    cout<<"Display is called"<<endl;
+}
 
 
 
