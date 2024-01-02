@@ -899,6 +899,85 @@ int main()
     getch();
 }
 
+//parameter set
+#include<iostream>
+#include<conio.h>
+using namespace std;
+
+class student
+{
+    public :
+        int id;
+        double gpa;
+
+        void display()
+        {
+            cout<<id<<"  "<<gpa<<endl;
+        }
+        void setvalue(int x,double y)
+        {
+            id=x;
+            gpa=y;
+
+        }
+};
+
+int main()
+{
+    student alim,suma;
+
+    alim.setvalue(101,3.44);
+    alim.display();
+
+
+    suma.setvalue(102,3.92);
+    suma.display();
+
+
+    getch();
+}
+//Constructor
+#include<iostream>
+#include<conio.h>
+using namespace std;
+
+class student
+{
+    public :
+        int id;
+        double gpa;
+
+        void display()
+        {
+            cout<<id<<"  "<<gpa<<endl;
+        }
+        student(int x, double y)
+        {
+             id = x;
+            gpa = y;
+         }
+
+};
+
+int main()
+{
+    student alim(101,3.44);
+    alim.display();
+
+    student suma(102,3.92);
+    suma.display();
+
+
+    getch();
+}
+
+
+
+
+
+
+
+
 
 
 
