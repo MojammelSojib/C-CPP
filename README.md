@@ -1021,6 +1021,23 @@ int main()
     return 0;
 }
 //fistclass.h
+#ifndef MYFIRSTCLASS_H
+#define MYFIRSTCLASS_H
+#include "myfirstclass.h"
+
+class myfirstclass
+{
+    public:
+        myfirstclass();
+        void display();
+
+
+};
+
+#endif // MYFIRSTCLASS_H
+
+
+//firstclass.cpp
 #include "myfirstclass.h"
 #include<iostream>
 using namespace std;
@@ -1033,7 +1050,6 @@ void myfirstclass::display()
 {
     cout<<"Inside the Function"<<endl ;
 }
-
 
 
 
