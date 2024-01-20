@@ -970,7 +970,6 @@ int main()
 #include<iostream>
 #include<conio.h>
 using namespace std;
-
 class student
 {
     public :
@@ -990,8 +989,7 @@ class student
          {
              cout<<"Default construct"<<endl;
          }
-};
-
+}; 
 int main()
 {
     student ob;
@@ -1003,6 +1001,14 @@ int main()
 
     getch();
 }
+
+
+
+##Important part##
+
+
+
+
 //creating separate files for class
 //main
 #include <iostream>
