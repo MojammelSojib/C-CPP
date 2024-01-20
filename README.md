@@ -940,7 +940,6 @@ int main()
 #include<iostream>
 #include<conio.h>
 using namespace std;
-
 class student
 {
     public :
@@ -956,9 +955,7 @@ class student
              id = x;
             gpa = y;
          }
-
 };
-
 int main()
 {
     student alim(101,3.44);
@@ -966,7 +963,6 @@ int main()
 
     student suma(102,3.92);
     suma.display();
-
 
     getch();
 }
