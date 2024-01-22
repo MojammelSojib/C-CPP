@@ -1132,6 +1132,96 @@ void myfirstclass :: display()
 }
 
 
+**Destructor**
+
+
+#include <iostream>
+#include "my2ndclass.h"
+
+using namespace std;
+
+int main()
+{
+   my2ndclass ob;
+    return 0;
+}
+
+
+#ifndef MY2NDCLASS_H
+#define MY2NDCLASS_H
+#include "my2ndclass.h"
+
+
+class my2ndclass
+{
+    public:
+        my2ndclass();
+    ~my2ndclass();
+
+};
+
+#endif // MY2NDCLASS_H
+
+
+#include "my2ndclass.h"
+#include<iostream>
+using namespace std;
+
+my2ndclass:: my2ndclass()
+{
+    cout<<"Constructor is called "<<endl;
+}
+my2ndclass :: ~my2ndclass()
+{
+    cout<<"Destructor is called "<<endl;
+}
+
+Destructor use kora hoi sobar ses a realase korar kaj e
+
+#include <iostream>
+#include "my2ndclass.h"
+using namespace std;
+int main()
+{
+   my2ndclass ob;
+   ob.display();
+    return 0;
+}
+
+#ifndef MY2NDCLASS_H
+#define MY2NDCLASS_H
+#include "my2ndclass.h"
+
+
+class my2ndclass
+{
+    public:
+        my2ndclass();
+    ~my2ndclass();
+    void display();
+
+};
+
+#endif // MY2NDCLASS_H
+
+#include "my2ndclass.h"
+#include<iostream>
+using namespace std;
+
+my2ndclass:: my2ndclass()
+{
+    cout<<"Constructor is called "<<endl;
+}
+my2ndclass :: ~my2ndclass()
+{
+    cout<<"Destructor is called "<<endl;
+}
+void my2ndclass::display()
+{
+    cout<<"Display is called"<<endl;
+}
+
+
 
 
 
