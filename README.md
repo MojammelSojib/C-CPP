@@ -1269,11 +1269,79 @@ int main()
 }
 
 Constant Objects
+#include <iostream>
+#include "fuckclass.h"
+using namespace std;
+
+int main()
+{
+    const fuckclass ob;
+    ob.display1();
+
+    fuckclass ob2;
+    ob2.display2();
+
+    return 0;
+}
+
+#ifndef FUCKCLASS_H
+#define FUCKCLASS_H
 
 
+class fuckclass
+{
+public :
+    void display1() const;
+    void display2();
+};
 
+#endif // FUCKCLASS_H
 
+#include "fuckclass.h"
+#include <iostream>
 
+using namespace std;
+
+void fuckclass :: display1 () const
+{
+  cout<<"I am a fucking constantn"<<endl;
+}
+
+void fuckclass :: display2 ()
+{
+  cout<<"I am a non-fucking constantn"<<endl;
+}
+
+constructor initializer
+
+#include <iostream>
+#include<conio.h>
+using namespace std;
+
+class student
+{
+    public:
+   const int admissionfee;
+   const int examfee;
+   int id;
+
+   student(int x,int y,int z)
+   :admissionfee(x),examfee(y)
+
+   {
+       cout<< "Admisssion fee = "<<admissionfee <<endl;
+       cout<<"Exam fee = "<< examfee <<endl;
+       id=z;
+       cout<<"Id = "<<id;
+   }
+};
+
+int main()
+{
+    student s1(15000,500,2114059);
+
+   getch();
+}
 
 
 
