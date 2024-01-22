@@ -1221,8 +1221,39 @@ void my2ndclass::display()
     cout<<"Display is called"<<endl;
 }
 
+Selection Operator
+#include <iostream>
+#include "my2ndclass.h"
+using namespace std;
+int main()
+{
+   my2ndclass ob;
+   my2ndclass *p=&ob;
+    p-> display();
+    return 0;
+}
+#ifndef MY2NDCLASS_H
+#define MY2NDCLASS_H
+#include "my2ndclass.h"
 
 
+class my2ndclass
+{
+    public:
+    void display();
+
+};
+
+#endif // MY2NDCLASS_H
+
+#include "my2ndclass.h"
+#include<iostream>
+using namespace std;
+
+void my2ndclass::display()
+{
+    cout<<"Display is called"<<endl;
+}
 
 
 
