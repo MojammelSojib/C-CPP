@@ -1355,7 +1355,29 @@ int main() {
   cout << "Hello, "<< name <<endl;
   return 0;
 }
+problem 2
+#include<iostream>
+using namespace std;
 
+int main()
+{
+    int i;
+    long long lld;
+    char ch;
+    float f;
+    double lf;
+
+    cin>>i>>lld>>ch>>f>>lf;
+
+    cout<<i<<endl;
+    cout<<lld<<endl;
+    cout<<ch<<endl;
+    cout<<f<<endl;
+    cout<<lf<<endl;
+
+    return 0;
+}
+simple calculator
 
 
 
