@@ -1423,6 +1423,41 @@ int main() {
     return 0;
 }
 
+H.Two Numbers
+#include <iostream>
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+
+    double M,N;
+    cin >> M >> N;
+
+
+    cout<<"floor"<<" "<< M <<" / "<< N <<" = "<<floor(M/N) <<endl;
+    cout<<"ceil"<<" "<< M <<" / "<< N <<" = "<<ceil(M/N) <<endl;
+    cout<<"round"<<" "<<M <<" / "<< N <<" = "<<round(M/N) <<endl;
+
+    return 0;
+}
+I
+#include <iostream>
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+
+    int A,B;
+    cin >> A>> B;
+
+    if(A>=B){
+        cout<<"Yes";
+    }
+    else
+        cout<<"No";
+    return 0;
+}
+
 
 
 
